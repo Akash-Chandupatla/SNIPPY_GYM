@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #171d17;
+    color: #C2AA92;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    background-color: #C2AA92;
+    color: #202020;
+    width: 100%;
+    height: 100px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Media Queries - Mobile First Approach */
+
+@media(min-width: 300px) {
+
+    nav {
+        display: flex;
+        justify-content: center;
+        height: 75px;
+        padding: 1vh 0;
+    }
+
+    nav img {
+        height: 8vh;
+        width: auto;
+        margin-right: 2rem;
+    }
+
+    nav h1 {
+        font-weight: 900;
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+
+    .one,
+    h2,
+    p {
+        margin: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .one img {
+        padding: 2vh 0;
+    }
+
+    .two {
+        background: #C2AA92;
+        border: 2px solid #3f3d3d;
+        margin: 2rem;
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+    .two label {
+        color: #181818;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .two input[type="text"] {
+        border: 0;
+        outline: 0;
+        width: 100%;
+        height: 3vh;
+        border-bottom: 2px solid black;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin: 8px 0;
+        padding: 12px 20px;
+    }
+
+    .two input[type="radio"],
+    input[type="checkboxes"] {
+        box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 15px 20px;
+        padding: 20px auto;
+    }
+
+    .gender {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .checkboxes {
+        margin-top: 1px;
+        padding: 15px 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .button {
+        background-color: #171d17;
+        color: aliceblue;
+        font-weight: bold;
+        width: 90%;
+        margin-top: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        padding: 0.9rem;
+        border-radius: 7px;
+    }
+
+    .equipment_list h3 {
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        background: white;
+        border-radius: 10px;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .segments {
+        margin: 2rem;
+    }
+
+    .segmentA {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .segmentA h3 {
+        text-align: center;
+        margin-bottom: 3rem;
+        text-decoration: underline;
+    }
+
+    .segmentA img {
+        width: 270px;
+        height: auto;
+        margin-left: 2rem;
+    }
+
+    .segmentB {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .segments .segmentB h3 {
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 3rem;
+    }
+
+    .segmentB img {
+        width: 20rem;
+        height: 12rem;
+        border-radius: 20px;
+    }
+}
+
+@media(min-width: 700px) {
+    .one h2 {
+        font-size: 2rem;
+    }
+
+    .one p {
+        font-size: 1.5rem;
+    }
+
+    .equipment_list h3 {
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+
+    .cards {
+        margin: 3rem
+    }
+
+    .segments {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
