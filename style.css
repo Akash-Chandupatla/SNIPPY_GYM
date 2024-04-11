@@ -9,6 +9,8 @@
 body {
   background: #171d17;
   color: #c2aa92;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 img {
@@ -30,6 +32,10 @@ nav {
 /* Media Queries - Mobile First Approach */
 
 @media (min-width: 300px) {
+  body {
+    overflow-x: hidden;
+  }
+
   nav {
     display: flex;
     justify-content: center;
@@ -62,7 +68,7 @@ nav {
   .one img {
     margin: 0 1rem;
     padding: 1vw 0;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .two {
@@ -97,7 +103,7 @@ nav {
     padding: 20px auto;
   }
 
-  .gender{
+  .gender {
     padding: 2px 20px;
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -126,9 +132,14 @@ nav {
     border-radius: 7px;
   }
 
+  .equipment_list {
+    margin-top: 0;
+  }
+
   .equipment_list h3 {
     text-align: center;
-    margin: 1rem;
+    margin: 0 1rem;
+    text-decoration: underline;
   }
 
   .cards {
@@ -188,6 +199,20 @@ nav {
 /* Media Queries for Tablet */
 
 @media (min-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  .one .mImg1 {
+    width: 500px;
+    height: 450px;
+    margin-bottom: 3rem;
+  }
+
+  .mImg1 {
+    text-align: center;
+    margin: 1rem 2rem 0 8rem;
+  }
+
   .one h2 {
     font-size: 2rem;
   }
@@ -199,6 +224,7 @@ nav {
   .equipment_list h3 {
     margin-top: 3rem;
     font-size: 2rem;
+    text-decoration: underline;
   }
 
   .cards {
@@ -211,10 +237,88 @@ nav {
   }
 }
 
+/* Media Queries for Desktop */
+
 @media (min-width: 900px) {
-    nav{
-        justify-content: left;
-        padding-left: 8vw;
-    }
-    
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    justify-content: left;
+    padding-left: 8vw;
+  }
+
+  .one h2,
+  p {
+    display: none;
+  }
+
+  .one img {
+    width: 500px;
+    height: 450px;
+  }
+
+  .one h2 p {
+    display: none;
+  }
+
+  .model {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin-left: 0;
+    margin: 1rem;
+  }
+
+  .one .mImg1 {
+    width: 300px;
+    text-align: center;
+  }
+
+  .two {
+    width: 30%;
+    margin: 0 5rem;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    align-self: center;
+  }
+  .two label {
+    font-size: 1rem;
+  }
+
+  .two input[type="text"] {
+    font-size: 1rem;
+  }
+
+  .two form {
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .equipment_list h3 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+  }
+
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .segmentA {
+    width: 50%;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  .segmentB {
+    width: 50%;
+  }
 }

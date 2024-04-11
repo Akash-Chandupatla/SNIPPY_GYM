@@ -1,94 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./Assets/l1.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./Assets/l1.png" type="image/x-icon" />
     <title>SNIPPY GYM</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="flex">
-        <img src="./Assets/l1.png" alt="LOGO" width="60px" height="60px">
-        <h1>SNIPPY GYM</h1>
+      <img src="./Assets/l1.png" alt="LOGO" width="60px" height="60px" />
+      <h1>SNIPPY GYM</h1>
     </nav>
     <section class="model">
-        <div class="one">
-            <h2>Premium Gym Equipment</h2>
-            <p>Hassle free Delivery, Free shipping</p>
-            <div class="m1_model">
-                <img src="./Assets/M1.png" alt="Model">
+      <div class="one">
+        <h2>Premium Gym Equipment</h2>
+        <p>Hassle free Delivery, Free shipping</p>
+        <div class="mImg1">
+          <img src="./Assets/M1.png" alt="Model" />
+        </div>
+      </div>
+
+      <div class="two">
+        <form action="">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter your name"
+          />
+          <br />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <br />
+
+          <div class="gender">
+            <div class="radio">
+              <input type="radio" name="gender" id="gender" value="male" />
+              <label for="gender">Male</label>
             </div>
-        </div>
+            <div class="radio">
+              <input type="radio" name="gender" id="gender" value="female" />
+              <label for="gender">Female</label>
+            </div>
+          </div>
+          <div class="checkboxes">
+            <div class="check">
+              <input
+                type="checkbox"
+                name="equipment"
+                value="weights"
+                id="weights"
+              />
+              <label for="weights">weights</label>
+            </div>
+            <div class="check">
+              <input
+                type="checkbox"
+                name="equipment"
+                value="dumbbells"
+                id="dumbbells"
+              />
+              <label for="dumbbells">Dumbbells</label>
+            </div>
+            <div class="check">
+              <input
+                type="checkbox"
+                name="equipment"
+                value="ropes"
+                id="ropes"
+              />
+              <label for="ropes">Ropes</label>
+            </div>
+            <div class="check">
+              <input
+                type="checkbox"
+                name="equipment"
+                value="shirts"
+                id="shirts"
+              />
+              <label for="shirts">Shirts</label>
+            </div>
+          </div>
 
-        <div class="two">
-            <form action="">
-                <input type="text" name="username" id="username" placeholder="Enter your name">
-                <br>
-                <input type="text" name="email" id="email" placeholder="Enter your email">
-                <br>
-
-                <div class="gender">
-                    <div class="radio">
-                        <input type="radio" name="gender" id="gender" value="male">
-                        <label for="gender">Male</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="gender" id="gender" value="female">
-                        <label for="gender">Female</label>
-                    </div>
-                </div>
-                <div class="checkboxes">
-                    <div class="check">
-                        <input type="checkbox" name="equipment" value="weights" id="weights">
-                        <label for="weights">weights</label>
-                    </div>
-                    <div class="check">
-                        <input type="checkbox" name="equipment" value="dumbbells" id="dumbbells">
-                        <label for="dumbbells">Dumbbells</label>
-                    </div>
-                    <div class="check">
-                        <input type="checkbox" name="equipment" value="ropes" id="ropes">
-                        <label for="ropes">Ropes</label>
-                    </div>
-                    <div class="check">
-                        <input type="checkbox" name="equipment" value="shirts" id="shirts">
-                        <label for="shirts">Shirts</label>
-                    </div>
-                </div>
-
-                <input class="button" type="submit" id="submit" value="Book Your Equipment">
-
-            </form>
-        </div>
+          <input
+            class="button"
+            type="submit"
+            id="submit"
+            value="Book Your Equipment"
+          />
+        </form>
+      </div>
     </section>
 
     <section class="equipment_list">
-        <div>
-            <h3>Get your latest equipment</h3>
-        </div>
-        <div class="cards">
-            <div class="card"> <img src="./Assets/1.png" alt=""> </div>
-            <div class="card"> <img src="./Assets/2.png" alt=""> </div>
-            <div class="card"> <img src="./Assets/3.png" alt=""> </div>
-            <div class="card"> <img src="./Assets/4.png" alt=""> </div>
-        </div>
+      <div>
+        <h3>Get your latest equipment</h3>
+      </div>
+      <div class="cards">
+        <div class="card"><img src="./Assets/1.png" alt="" /></div>
+        <div class="card"><img src="./Assets/2.png" alt="" /></div>
+        <div class="card"><img src="./Assets/3.png" alt="" /></div>
+        <div class="card"><img src="./Assets/4.png" alt="" /></div>
+      </div>
     </section>
 
     <section class="segments">
-        <div class="segmentA">
-            <h3>Equipment</h3>
-            <img src="./Assets/5.png" alt="">
-        </div>
+      <div class="segmentA">
+        <h3>Equipment</h3>
+        <img src="./Assets/5.png" alt="" />
+      </div>
 
-        <div class="segmentB">
-            <h3>Membership</h3>
-            <img src="./Assets/6.png" alt="">
-        </div>
+      <div class="segmentB">
+        <h3>Membership</h3>
+        <img src="./Assets/6.png" alt="" />
+      </div>
     </section>
-
-</body>
-
+  </body>
 </html>
