@@ -38,7 +38,7 @@ nav {
   }
 
   nav img {
-    height: 8vh;
+    height: 6vh;
     width: auto;
     margin-right: 2rem;
   }
@@ -100,7 +100,7 @@ nav {
   .gender{
     padding: 2px 20px;
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    grid-template-columns: 2fr 2fr;
   }
 
   .checkboxes {
